@@ -45,8 +45,8 @@ class FixedRatioManager {
         }
 
         if ratioOptions.contains(.square) {
-            let squareText = LocalizedHelper.getString("Mantis.Square", value: "Square")
-            let square = RatioItemType(nameH: squareText, ratioH: 1.0, nameV: squareText, ratioV: 1.0)
+            //let squareText = LocalizedHelper.getString("Mantis.Square", value: "Square")
+            let square = RatioItemType(nameH: "Quadrat", ratioH: 1.0, nameV: squareText, ratioV: 1.0)
             appendToTail(ratioItem: square)
         }
 
@@ -62,8 +62,8 @@ class FixedRatioManager {
     }
 
     func getOriginalRatioItem() -> RatioItemType? {
-        let originalText = LocalizedHelper.getString("Mantis.Original", value: "Original")
-        return RatioItemType(nameH: originalText, ratioH: originalRatioH, nameV: originalText, ratioV: originalRatioH)
+        //let originalText = LocalizedHelper.getString("Mantis.Original", value: "Original")
+        return RatioItemType(nameH: "Original", ratioH: originalRatioH, nameV: originalText, ratioV: originalRatioH)
     }
 }
 
