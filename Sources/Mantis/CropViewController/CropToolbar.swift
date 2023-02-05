@@ -63,8 +63,8 @@ public class CropToolbar: UIView, CropToolbarProtocol {
             return button
         }
 
-        let cancelText = LocalizedHelper.getString("Mantis.Cancel", value: "Cancel")
-        return createOptionButton(withTitle: cancelText, andAction: #selector(cancel))
+        //let cancelText = LocalizedHelper.getString("Mantis.Cancel", value: "Cancel")
+        return createOptionButton(withTitle: "Abbrechen", andAction: #selector(cancel))
     }()
 
     private lazy var cropButton: UIButton = {
@@ -74,8 +74,8 @@ public class CropToolbar: UIView, CropToolbarProtocol {
             return button
         }
         
-        let doneText = LocalizedHelper.getString("Mantis.Done", value: "Done")
-        return createOptionButton(withTitle: doneText, andAction: #selector(crop))
+        //let doneText = LocalizedHelper.getString("Mantis.Done", value: "Done")
+        return createOptionButton(withTitle: "Fertig", andAction: #selector(crop))
     }()
 
     private var resetButton: UIButton?
@@ -254,8 +254,8 @@ extension CropToolbar {
             button.setImage(image, for: .normal)
             return button
         } else {
-            let resetText = LocalizedHelper.getString("Mantis.Reset", value: "Reset")
-            return createOptionButton(withTitle: resetText, andAction: #selector(reset))
+            //let resetText = LocalizedHelper.getString("Mantis.Reset", value: "Reset")
+            return createOptionButton(withTitle: "Zurücksetzen", andAction: #selector(reset))
         }
     }
     
