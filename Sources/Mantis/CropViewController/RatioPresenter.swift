@@ -65,8 +65,8 @@ class RatioPresenter {
 
         actionSheet.handlePopupInBigScreenIfNeeded(sourceView: sourceView)
 
-        let cancelText = LocalizedHelper.getString("Mantis.Cancel", value: "Cancel")
-        let cancelAction = UIAlertAction(title: cancelText, style: .cancel)
+        //let cancelText = LocalizedHelper.getString("Mantis.Cancel", value: "Cancel")
+        let cancelAction = UIAlertAction(title: "Abbrechen", style: .cancel)
         actionSheet.addAction(cancelAction)
 
         viewController.present(actionSheet, animated: true)
